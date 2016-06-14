@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>搜狐新闻</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<script src="./js/jquery.js"></script>
+  	<script src="./js/angular.js"></script>
+  	<script src="./js/angular-animate.js"></script>
+	<script src="./js/angular-touch.js"></script>	
+  	<script src="./js/angular-route.js"></script>
+  	<script src="./js/swiper.jquery.js"></script>
+  	<script src="./js/mine.js"></script>
+</head>
+<body ng-controller="indexCtrl">
+	<sh-yindao ng-if="isFirstOpen"></sh-yindao>
+	<sh-title></sh-title>
+	<div id="content">
+		<ng-view></ng-view>
+	</div>
+	<sh-tab-bar></sh-tab-bar>
+</body>
+</html>

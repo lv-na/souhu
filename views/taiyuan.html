@@ -1,0 +1,15 @@
+<div class="taiyuan">
+	<div class="city">
+		<div class="change"><span class="one"></span>切换城市</div>
+		<div class="change"><span class="two"></span>切换城市</div>
+		<div class="change"><span class="three"></span>切换城市</div>
+	</div>
+	<div class="shanxi" ng-repeat="v in taiyuan">
+		<span class="tou"><img src="{{v.src}}" alt=""></span>
+		<span class="neirong">{{v.name}}</span>
+		<div class="pinlun">
+			<span><p class="message"></p><p class="five">{{v.pingjia}}</p><p class="people">{{v.wangzhan}}</p><p class="type">{{v.more}}</p></span>
+		</div>
+	</div>
+	
+</div>

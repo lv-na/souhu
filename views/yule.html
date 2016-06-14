@@ -1,0 +1,23 @@
+<div id="yule">
+	<div class="tupian" ng-repeat="v in yule"><img src="{{v.src}}" alt=""></div>
+	<div class="shanxi" ng-repeat="x in huo">
+		<span class="tou"><img src="{{x.src}}" alt=""></span>
+		<span class="neirong">{{x.name}}</span>
+		<div class="pinlun">
+			<span><p class="message"></p><p class="people">{{x.news}}</p><p class="type">{{x.type}}</p></span>
+		</div>
+	</div>
+	<div class="tuiguang" ng-repeat="a in tuiguang">
+		<div class="t-news">{{a.name}}</div>
+		<span class="liu1"><img src="{{a.src}}" alt=""></span>
+		<span class="liu1"><img src="{{a.src1}}" alt=""></span>
+		<span class="liu2"><img src="{{a.src2}}" alt=""></span>
+		<div class="zhuanzai">
+			<span class="a"></span><span class="count">{{a.ping}}</span>
+			<span class="a" style="margin-left:0.08rem"></span><span class="count">{{z.zhuan}}</span>
+			<span class="s-yule">{{a.xin}}</span>
+			<span class="gengduo">{{a.type}}</span>
+		</div>
+
+	</div>
+</div>

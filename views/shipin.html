@@ -1,0 +1,14 @@
+<div id="shipin">
+	<div class="quan" ng-repeat="v in shipin">
+		<div class="gaoxiao"><span>{{v.type}}</span></div>
+		<div class="sh-s" ng-repeat="x in v.gaoxiao">
+			<span class="zhongji">{{x.neirong}}</span>
+			<span class="sh-t"><img src="{{x.src}}" alt=""></span>
+			<div class="sh-xia">
+				<span class="sh-j">{{x.from}}</span>
+				<span class="bofang"></span>
+				<span class="sh-shu">{{x.ling}}</span>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<div id="dingyue">
+	<div class="tianjia">
+		<div class="xinzeng"><span class="jia"></span><span class="zi">添加订阅</span></div>
+	</div>
+	<div class="yitianjia" ng-repeat="v in toutiao">
+		<a href="#/weixin/{{$index}}">
+			<span class="datoutiao"><img src="{{v.src}}" alt=""></span>
+			<div class="liaotian">
+				<h3>{{v.name}}</h3>
+				<span class="redian">{{v.jieshao}}</span>
+			</div>
+			<span class="shijian">{{v.time}}</span>
+		</a>
+	</div>
+	<div class="dibuxian"></div>
+	<div class="souhu">推荐搜狐公众号</div>
+	<div class="yitianjia" ng-repeat="x in remen">
+		<a href="#/weixin/{{$index}}">
+			<span class="datoutiao"><img src="{{x.src}}" alt=""></span>
+			<div class="liaotian">
+				<h3>{{x.name}}</h3>
+				<span class="teb">{{x.jieshao}}</span>
+			</div>
+			<div class="dingyue"><span class="dingyuejia"></span>{{x.dingyue}}</div>
+		</a>
+	</div>
+</div>

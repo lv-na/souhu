@@ -1,0 +1,29 @@
+<div id="index">
+	<div class="search">
+			<span></span>
+			<input type="text" placeholder="大家都在搜:林妙可被毒虫咬伤">
+	</div>
+	<div class="lunbo"> 
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href=""><img src="../img/lunbo/1.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="../img/lunbo/2.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="../img/lunbo/5.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="../img/lunbo/4.jpg" alt=""></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>s
+	
+	<div class="news" ng-repeat="v in news">
+		<a href="#/shouye/{{$index}}">
+			<span class="tou"><img src="{{v.src}}" alt=""></span>
+			<span class="neirong">{{v.neirong}}</span>
+			<div class="pinlun">
+				<span><p class="message"></p><p class="people">{{v.pinglun}}</p><p class="type">{{v.type}}</p></span>
+			</div>
+		</a>
+	</div>
+</div>
+<!-- <h1>dfbd</h1> -->

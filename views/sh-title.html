@@ -1,0 +1,27 @@
+<div class="tab">
+	<div class="logo"><img src="img/logo.png" alt=""></div>
+	<ul class="header">
+		<li ng-repeat="v in biaoti"><a href="{{v.href}}">{{v.name}}</a></li>
+	</ul>
+	<div class="zhankai" ng-init="show=false" ng-click="show=!show">
+		<div class="xian">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="drop" ng-show="show">
+		<div class="search">
+			<span></span>
+			<input type="text" placeholder="大家都在搜:林妙可被毒虫咬伤">
+		</div>
+		<div class="xiabian">
+			<div class="more" ng-repeat="v in drop">
+				<span class="tuijian">{{v.name}}</span>
+			<ul>
+				<li ng-repeat="x in v.jutipindao"><a href="">{{x.xinxi}}</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+</div>
